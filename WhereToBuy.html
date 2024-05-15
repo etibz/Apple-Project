@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>WhereToBuy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <link rel="icon" href="imges/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="NewCSS.css" />
+
+    <script>
+        $(document).ready(function () {
+            $('#tel').click(function () {
+                $(phone1).toggle();
+                document.getElementById("phone1").innerHTML = "(256) 327-8800";                             
+            });
+        });
+        
+        
+        $(document).ready(function () {
+            $('#tel2').click(function () {
+                $(phone2).toggle();
+                document.getElementById("phone2").innerHTML = "(424) 239-3880";
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tel3').click(function () {
+                $(phone3).toggle();
+                document.getElementById("phone3").innerHTML = "(303) 583-7310";
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tel4').click(function () {
+                $(phone4).toggle();
+                document.getElementById("phone4").innerHTML = "(786) 843-4350";
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tel5').click(function () {
+                $(phone5).toggle();
+                document.getElementById("phone5").innerHTML = "(808) 931-2480";
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tel6').click(function () {
+                $(phone6).toggle();
+                document.getElementById("phone6").innerHTML = "(616) 956-1420";
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tel7').click(function () {
+                $(phone7).toggle();
+                document.getElementById("phone7").innerHTML = "(702) 577-9740";
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tel8').click(function () {
+                $(phone8).toggle();
+                document.getElementById("phone8").innerHTML = "(201) 975-9500";
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tel9').click(function () {
+                $(phone9).toggle();
+                document.getElementById("phone9").innerHTML = "(718) 489-1540";
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tel10').click(function () {
+                $(phone10).toggle();
+                document.getElementById("phone10").innerHTML = "(509) 458-8080";
+            });
+        });
+    
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#flip2").click(function () {
+                $("#panel2").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#flip3").click(function () {
+                $("#panel3").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#flip4").click(function () {
+                $("#panel4").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#flip5").click(function () {
+                $("#panel5").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#flip6").click(function () {
+                $("#panel6").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#flip7").click(function () {
+                $("#panel7").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#flip8").click(function () {
+                $("#panel8").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#flip9").click(function () {
+                $("#panel9").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#flip10").click(function () {
+                $("#panel10").slideToggle("slow");
+            });
+        });
+    </script>
+</head>
+<body style="background-image: url('imges/apple-logo-wallpaper-1600x900.jpg'); ">
+    <div class="navbar">
+        <nav style="background-color: black; width: 1920px;">
+            <a id="logo" href="Home.html"><img src="imges/logo1.png" style="width: 15.5px; height: 21px; margin: 8px 0px 0px 640px"></a>
+            <ul>
+                <li>
+                    <a href="Mac.html" class="link">Mac</a>
+                </li>
+
+                <li>
+                    <a href="iPad.html" class="link">iPad</a>
+                </li>
+                <li>
+                    <a href="iPhone.html" class="link">iPhone</a>
+                </li>
+                <li>
+                    <a href="Watch.html" class="link">Watch</a>
+                </li>
+                <li>
+                    <a href="AppleTV.html" class="link">AppleTV</a>
+                </li>
+                <li>
+                    <a href="WhereToBuy.html" class="link">Where to Buy</a>
+                </li>
+                <li>
+                    <a href="ContactUs.html" class="link">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <fieldset style="border-color:black;border-radius: 30px">
+        <legend style="text-align: center; font-size: 60px; font-family: Segoe UI Black ">Where To Buy</legend>
+        <br />
+        <b>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Address</th>
+                    <th>Store Hours</th>
+                    <th>Phone</th>
+                </tr>
+                <tr>
+                    <td>Apple Bridge Street</td>
+                    <td>Alabama</td>
+                    <td>
+                        320 The Bridge Street
+                        Huntsville, AL 35806
+                    </td>
+                    <td>
+                        <div id="flip" class="flipp">Click for Activity Hours</div>
+                        <div id="panel" class="panell">                         
+                            Sun 	12:00 p.m. - 6:00 p.m.
+                            <br />
+                            Mon 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Tue 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Wed     10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Thu	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Fri	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Sat	    10:00 a.m. - 8:00 p.m.
+                        </div>
+                    </td>
+                    <td>
+                        <input id="tel" class="Tel" type="image" src="imges/icon.png" name="image" width="60" height="60">
+                        <p id="phone1"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apple Beverly Center</td>
+                    <td>California</td>
+                    <td>
+                        8500 Beverly Boulevard
+                        Los Angeles, CA 90048
+                    </td>
+                    <td>
+                        <div id="flip2" class="flipp">Click for Activity Hours</div>
+                        <div id="panel2" class="panell">
+                            Sun 	12:00 p.m. - 6:00 p.m.
+                            <br />
+                            Mon 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Tue 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Wed     10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Thu	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Fri	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Sat	    10:00 a.m. - 8:00 p.m.
+                        </div>
+                    </td>
+                    <td>
+                        <input id="tel2" class="Tel" type="image" src="imges/icon.png" name="image" width="60" height="60">
+                        <p id="phone2"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apple Cherry Creek</td>
+                    <td>Colorado</td>
+                    <td>
+                        3000 E 1st Avenue
+                        Denver, CO 80206
+                    </td>
+                    <td>
+                        <div id="flip3" class="flipp">Click for Activity Hours</div>
+                        <div id="panel3" class="panell">
+                            Sun 	12:00 p.m. - 6:00 p.m.
+                            <br />
+                            Mon 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Tue 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Wed     10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Thu	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Fri	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Sat	    10:00 a.m. - 8:00 p.m.
+                            </div>
+                    </td>
+                    <td>
+                        <input id="tel3" class="Tel" type="image" src="imges/icon.png" name="image" width="60" height="60">
+                        <p id="phone3"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apple Brickell City Centre</td>
+                    <td>Florida</td>
+                    <td>
+                        701 S. Miami Avenue
+                        Miami, FL 33130
+                    </td>
+                    <td>
+                        <div id="flip4" class="flipp">Click for Activity Hours</div>
+                        <div id="panel4" class="panell">
+                            Sun 	12:00 p.m. - 6:00 p.m.
+                            <br />
+                            Mon 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Tue 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Wed     10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Thu	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Fri	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Sat	    10:00 a.m. - 8:00 p.m.
+                            </div>
+                    </td>
+                    <td>
+                        <input id="tel4" class="Tel" type="image" src="imges/icon.png" name="image" width="60" height="60">
+                        <p id="phone4"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apple Royal Hawaiian</td>
+                    <td>Hawaii</td>
+                    <td>
+                        2301 Kalakaua Avenue
+                        Honolulu, HI 96815
+                    </td>
+                    <td>
+                        <div id="flip5" class="flipp">Click for Activity Hours</div>
+                        <div id="panel5" class="panell">
+                            Sun 	12:00 p.m. - 6:00 p.m.
+                            <br />
+                            Mon 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Tue 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Wed     10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Thu	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Fri	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Sat	    10:00 a.m. - 8:00 p.m.
+                            </div>
+                    </td>
+                    <td>
+                        <input id="tel5" class="Tel" type="image" src="imges/icon.png" name="image" width="60" height="60">
+                        <p id="phone5"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apple Woodland</td>
+                    <td>Michigan</td>
+                    <td>
+                        3195 28th Street
+                        Grand Rapids, MI 49512
+                    </td>
+                    <td>
+                        <div id="flip6" class="flipp">Click for Activity Hours</div>
+                        <div id="panel6" class="panell">
+                            Sun 	12:00 p.m. - 6:00 p.m.
+                            <br />
+                            Mon 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Tue 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Wed     10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Thu	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Fri	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Sat	    10:00 a.m. - 8:00 p.m.
+                            </div>
+                    </td>
+                    <td>
+                        <input id="tel6" class="Tel" type="image" src="imges/icon.png" name="image" width="60" height="60">
+                        <p id="phone6"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apple Fashion Show</td>
+                    <td>Nevada</td>
+                    <td>
+                        3200 Las Vegas Blvd South
+                        Las Vegas, NV 89109
+                    </td>
+                    <td>
+                        <div id="flip7" class="flipp">Click for Activity Hours</div>
+                        <div id="panel7" class="panell">
+                            Sun 	12:00 p.m. - 6:00 p.m.
+                            <br />
+                            Mon 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Tue 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Wed     10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Thu	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Fri	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Sat	    10:00 a.m. - 8:00 p.m.
+                            </div>
+                    </td>
+                    <td>
+                        <input id="tel7" class="Tel" type="image" src="imges/icon.png" name="image" width="60" height="60">
+                        <p id="phone7"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apple Garden State Plaza</td>
+                    <td>New Jersey</td>
+                    <td>
+                        1 Garden State Plaza
+                        Paramus, NJ 07652
+                    </td>
+                    <td>
+                        <div id="flip8" class="flipp">Click for Activity Hours</div>
+                        <div id="panel8" class="panell">
+                            Sun 	12:00 p.m. - 6:00 p.m.
+                            <br />
+                            Mon 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Tue 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Wed     10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Thu	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Fri	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Sat	    10:00 a.m. - 8:00 p.m.
+                            </div>
+                    </td>
+                    <td>
+                        <input id="tel8" class="Tel" type="image" src="imges/icon.png" name="image" width="60" height="60">
+                        <p id="phone8"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apple Queens Center</td>
+                    <td>New York</td>
+                    <td>
+                        90-15 Queens Boulevard
+                        Elmhurst, NY 11373
+                    </td>
+                    <td>
+                        <div id="flip9" class="flipp">Click for Activity Hours</div>
+                        <div id="panel9" class="panell">
+                            Sun 	12:00 p.m. - 6:00 p.m.
+                            <br />
+                            Mon 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Tue 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Wed     10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Thu	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Fri	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Sat	    10:00 a.m. - 8:00 p.m.
+                            </div>
+                    </td>
+                    <td>
+                        <input id="tel9" class="Tel" type="image" src="imges/icon.png" name="image" width="60" height="60">
+                        <p id="phone9"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apple River Park Square</td>
+                    <td>Washington</td>
+                    <td>
+                        710 West Main Avenue
+                        Spokane, WA 99201
+                    </td>
+                    <td>
+                        <div id="flip10" class="flipp">Click for Activity Hours</div>
+                        <div id="panel10" class="panell">
+                            Sun 	12:00 p.m. - 6:00 p.m.
+                            <br />
+                            Mon 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Tue 	10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Wed     10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Thu	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Fri	    10:00 a.m. - 8:00 p.m.
+                            <br />
+                            Sat	    10:00 a.m. - 8:00 p.m.
+                            </div>
+                    </td>
+                    <td>
+                        <input id="tel10" class="Tel" type="image" src="imges/icon.png" name="image" width="60" height="60">
+                        <p id="phone10"></p>
+                    </td>
+                </tr>
+            </table>
+        </b>
+    </fieldset>
+
+
+</body>
+</html>

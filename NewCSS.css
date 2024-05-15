@@ -1,0 +1,238 @@
+﻿body {
+    margin: 0;
+    padding: 0 ;
+    font-size: 100%;
+    line-height: 1.6;
+    font-family: Helvetica, sans-serif;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+.layer {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+    .layer .content-wrap {
+        position: absolute;
+        width: 100vw;
+        min-height: 55vw;
+    }
+
+    .layer .content-body {
+        position: absolute;
+        width: 25%;
+        top: 50%;
+        text-align: center;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+
+    .layer img {
+        position: absolute;
+        width: 35%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .layer h1 {
+        font-size: 2em;
+    }
+
+.bottom {
+    background: #222;
+    z-index: 1;
+}
+
+    .bottom .content-body {
+        right: 5%;
+    }
+
+    .bottom h1 {
+        color: white;
+    }
+
+/* top layer */
+
+.top {
+    background: #eee;
+    color: #222;
+    z-index: 2;
+    width: 50vw;
+}
+
+    .top .content-body {
+        left: 5%;
+        color: #222;
+    }
+
+.handle {
+    position: absolute;
+    height: 100%;
+    display: block;
+    background-color: white;
+    width: 5px; /*for the bar*/
+
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+/* skew effect */
+
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+    .skewed .top .content-wrap {
+        transform: skew(30deg);
+        margin-left: 1000px;
+    }
+
+@media(max-width: 768px) {
+
+    body {
+        font-size: 75%;
+    }
+}
+
+/*navbar*/
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex; 
+    gap: 25px; 
+    }
+
+.link {
+    position: relative; 
+    
+}
+    .link::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: darkslateblue; 
+        border-radius: 4px;
+        scale: 0 1;  
+        transform-origin: right; 
+        transition: scale 0.5s; 
+    }
+
+
+.link:hover::before {
+    scale: 1; 
+    transform-origin: left;
+    background-color: white; 
+}
+
+#iphone14pro {
+    
+    background: -webkit-linear-gradient(#b200ff,darkslateblue,#0026ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#iphone14 {
+    background: -webkit-linear-gradient(#1fcaca,#102ed9,#b200ff,#db0863,#ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+table {
+    
+    font-size: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+   
+}
+
+
+#logo {
+    opacity: 0.8;
+}
+
+    #logo:hover {
+        opacity: 1.0;
+    }
+
+.Tel {
+    opacity: 0.8;
+}
+
+    .Tel:hover {
+        opacity: 1.0;
+    }
+
+
+.panell, .flipp {
+    padding: 5px;
+    text-align: center;
+    background-color: silver;
+    border: solid 1px #c3c3c3;
+    
+}
+.flipp {
+    opacity: 0.8;
+}
+
+.flipp:hover {
+    opacity: 1.0;
+}
+
+
+.panell {
+    padding: 50px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

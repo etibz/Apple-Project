@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AppleProject</title>
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <link rel="icon" href="imges/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="NewCSS.css" />
+</head>
+<body>
+    <div class="navbar">
+        <nav style="background-color: black; width: 1920px;">
+            <a id="logo" href="Home.html"><img src="imges/logo1.png" style="width: 15.5px; height: 21px; margin: 8px 0px 0px 640px"></a>
+            <ul>
+                <li>
+                    <a href="Mac.html" class="link">Mac</a>
+                </li>
+                <li>
+                    <a href="iPad.html" class="link">iPad</a>
+                </li>
+                <li>
+                    <a href="iPhone.html" class="link">iPhone</a>
+                </li>
+                <li>
+                    <a href="Watch.html" class="link">Watch</a>
+                </li>
+                <li>
+                    <a href="AppleTV.html" class="link">AppleTV</a>
+                </li>
+                <li>
+                    <a href="WhereToBuy.html" class="link">Where to Buy</a>
+                </li>
+                <li>
+                    <a href="ContactUs.html" class="link">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div style="width:1920px;height:700px;">
+        <section class="skewed" id="wrapper">
+            <div class="layer bottom">
+                <div class="content-wrap">
+                    <div class="content-body">
+                        <br />
+                        <canvas id="iphone" width="250" height="80" style="border:1px solid #d3d3d3;margin-left:250px;">
+                        </canvas>
+                    </div>
+                    <img src="imges/HomeiPhone14Pro.jpg" style=" width:1206px;height:750px;border-radius:30px;">
+                </div>
+            </div>
+            <div class="layer top">
+                <div class="content-wrap">
+                    <div class="content-body">
+                        <br />
+                        <canvas id="mac" width="280" height="80" style="border:1px solid #d3d3d3;margin-left:-240px;">
+                        </canvas>
+                    </div>
+                    <img src="imges/macbook.jpeg" style=" width:1150px;height:750px;border-radius:30px;" alt="mask negative">
+                </div>
+            </div>
+            <div class="handle"></div>
+        </section>
+    </div>
+    <div style="width: 1920px; height: 300px;">
+    </div>
+    <div style="width:1920px;height:700px;">
+
+        <center>
+            <video width="1000px" height="1000px" autoplay muted loop />
+            <source src="videos/Apple.mp4" type="video/mp4">
+            </video>
+        </center>
+    </div>
+    <script>
+        var c = document.getElementById("iphone");
+        var ctx = c.getContext("2d");
+        ctx.font = "35px Calibri";
+        ctx.fillStyle = "white";
+        ctx.fillText("The new iPhone", 10, 50);
+        var d = document.getElementById("mac");
+        var dtx = d.getContext("2d");
+        dtx.font = "35px Calibri";
+        dtx.fillText("The new Macbook", 10, 50);
+    </script>
+</body>
+</html>

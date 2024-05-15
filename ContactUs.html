@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ContactUs</title>
+    <script type="text/javascript" src="JavaScript.js"></script>    
+    <link rel="icon" href="imges/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="NewCSS.css" />
+</head>
+<body style="background-image: url('imges/Background.jpg'); ">
+    <div class="navbar">
+        <nav style="background-color: black; width: 1920px;">
+            <a id="logo" href="Home.html"><img src="imges/logo1.png" style="width: 15.5px; height: 21px; margin: 8px 0px 0px 640px"></a>
+            <ul>
+                <li>
+                    <a href="Mac.html" class="link">Mac</a>
+                </li>
+
+                <li>
+                    <a href="iPad.html" class="link">iPad</a>
+                </li>
+                <li>
+                    <a href="iPhone.html" class="link">iPhone</a>
+                </li>
+                <li>
+                    <a href="Watch.html" class="link">Watch</a>
+                </li>
+                <li>
+                    <a href="AppleTV.html" class="link">AppleTV</a>
+                </li>
+                <li>
+                    <a href="WhereToBuy.html" class="link">Where to Buy</a>
+                </li>
+                <li>
+                    <a href="ContactUs.html" class="link">Contact Us</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+
+    <fieldset style="border-radius: 30px">
+
+        <legend style=" text-align: center;"><font size="7" face="Segoe UI Black "><b>Contact Us</b></font></legend>
+        <center><img onmouseenter="bigimg(this)" onmouseleave="normalimg(this)" src="imges/ContactUs.png" width="100" height="100" /></center>
+        <center>
+            <form name="appleForm" onsubmit="return formValidation()">
+
+
+                <div style="color: white;font-weight:bold">
+
+                    <fieldset style="border-radius: 10px; width: 9.5%">
+                        <legend><u><b>*First name:</b></u><br></legend>
+                        <input type="text" name="FirstName" placeholder="FirstName" onfocusin="skyBlue(this)" required>
+                    </fieldset>
+                    <br>
+                    <fieldset style="border-radius: 10px; width: 9.5%">
+                        <legend><u><b>*Last name:</b></u><br></legend>
+                        <input type="text" name="LastName" placeholder="LastName" onfocusin="skyBlue(this)" required>
+                    </fieldset>
+                    <br>
+                    <fieldset style="border-radius: 10px; width: 9.5%">
+                        <legend><u><b>*Email:</b></u><br></legend>
+                        <input type="email" name="Email" placeholder="example@email.com" onfocusin="skyBlue(this)" required>
+                    </fieldset>
+                    <br>
+                    <fieldset style="border-radius: 10px; width: 9.5%">
+                        <legend><u><b>Get the help you need:</b></u></legend>
+                        <label>
+                            <br>
+                            <input type="radio" name="radio1" checked" />Sales<br />
+                            <input type="radio" name="radio1" />Support<br />
+                            <input type="radio" name="radio1" />Technical<br />
+                            <input type="radio" name="radio1" />Other<br />
+                            <br>
+                        </label>
+                    </fieldset>
+                    <br>
+                    <fieldset style="border-radius: 10px; width: 9.5%">
+                        <legend><u><b>Phone:</b></u><br></legend>
+                        <input type="text" name="Phone" maxlength="10" pattern="^[0-9]{10}$" placeholder="Eg.054-4444444" onfocusin="skyBlue(this)" required>
+                    </fieldset>
+                    <br>
+                    <fieldset style="border-radius: 10px; width: 9.5%">
+                        <legend><u><b>Select a Device:</b></u></legend>
+                        <label>
+                            <br>
+                            <input type="checkbox" name="checkbox1" checked />iPhone<br /><br />
+                            <input type="checkbox" name="checkbox2" />iPad<br /><br />
+                            <input type="checkbox" name="checkbox3" />Mac<br /><br />
+                            <input type="checkbox" name="checkbox4" />AppleWatch<br /><br />
+                            <input type="checkbox" name="checkbox5" />AppleTV<br /><br />
+                            <input type="checkbox" name="checkbox6" />Airpods<br /><br />
+                            <input type="checkbox" name="checkbox7" />Other<br />
+                            <br>
+                        </label>
+                    </fieldset>
+                    <br />
+                    <fieldset style="border-radius: 10px; width: 9.5%">
+                        <legend><u><b>Country:</b></u><br></legend>
+                        <input type="text" name="Country" onfocusin="skyBlue(this)" required>
+                    </fieldset>
+                    <br>
+                    <fieldset style="border-radius: 10px; width: 9.5%">
+                        <legend><u><b>City:</b></u><br></legend>
+                        <input type="text" name="City" onfocusin="skyBlue(this)" required>
+                    </fieldset>
+                    <br>
+                    <fieldset style="border-radius: 10px; width: 20%">
+                        <legend><u><b>Comment:</b></u><br></legend>
+                        <textarea rows="20" cols="20" style="width:800px;height:300px;"> 
+                             
+                    </textarea>
+                    </fieldset>
+                    <br />
+
+                    <br />
+                </div>
+
+                <h2 id="arr" style="color:green"></h2>
+                <button style="font-size: 20px; margin: 0px 20px 0px 0px; ">Submit</button>
+                <button type="button" onclick="arr()" style="font-size: 20px; margin: 0px 20px 0px 0px; ">Help</button>
+            </form>
+        </center>
+    </fieldset>
+<script>
+
+    function bigimg(t) {
+        t.style.height = "200px";
+        t.style.width = "200px";
+    }
+    function normalimg(t) {
+        t.style.height = "100px";
+        t.style.width = "100px";
+    }
+
+    function skyBlue(x) {
+        x.style.background = "lightskyblue";
+    }
+ 
+    function formValidation1() {
+        var FirstName = document.forms["appleForm"]["FirstName"].value;
+
+        var LastName = document.forms["appleForm"]["LastName"].value;
+
+        var Email = document.forms["appleForm"]["Email"].value;
+
+        var Country = document.forms["appleForm"]["Country"].value;
+
+        var City = document.forms["appleForm"]["City"].value;
+
+        var Phone = document.forms["appleForm"]["Phone"].value;
+
+        var phoneRegex = /^[0-9]{10}$/;
+    }
+
+    var mss = ["For help", "Please Call to", "03-7426565"];
+    function arr() {
+        var res = "";
+        for (var i = 0; i < mss.length; i++) {
+            res += mss[i] + " ";
+        }
+
+        document.getElementById("arr").innerHTML = res;
+
+    }
+</script>
+
+
+</body>
+</html>
